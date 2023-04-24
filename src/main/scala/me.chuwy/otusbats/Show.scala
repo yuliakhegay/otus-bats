@@ -10,7 +10,7 @@ object Show {
   // 1.1 Instances (`Int`, `String`, `Boolean`)
 
   implicit val stringShow: Show[String] = Show.fromJvm[String]
-  implicit val stringShow2: Show[String] = Show.fromFunction[String](a => a.toString)
+  implicit val stringShow2: Show[String] = Show.fromFunction[String](a => a)
 
   implicit val intShow: Show[Int] = Show.fromJvm[Int]
   implicit val intShow2: Show[Int] = Show.fromFunction[Int](a => a.toString)
